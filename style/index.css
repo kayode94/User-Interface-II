@@ -37,85 +37,78 @@ body{
   }
   /* Header styles */ 
   nav{
-      display:flex;
-      justify-content:space-between;
-      font-size:20px;
-      position: absolute;
-      top: 0px;
-      right: 0;
-      height: 100px;
-    }
-  
-  h1{
     display:flex;
-    text-align:center;
-    color:Green;
-    height:100px;
-    width:300px;
+    justify-content:space-between;
+    font-size:20px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 100px;
   }
-  
-  .Home p:hover{
-    color:gold;
-  }
-  
-  .About p:hover{
-    color:gold;
-  }
-  
-  .Contact p:hover{
-    color:gold;
-  }
-  
-  .Project p:hover{
-    color:gold;
-  }
-  
-  /* Body Text Styles*/
-  h2{
-    text-align:center;
-    color:crimson;
-  }
-  /* Project Stlyes*/
-  
-  img{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    height:500px;
-    width:500px;
-  }
-  
-  h3{
-    text-align:center;
-  }
-  h3:hover{
-    color:crimson;
-  }
-  
-  /* Paragraph stytling */
-  
-  .Project1 p{
-    font-size:17px;
-  }
-  
-  .Project2 p{
-    font-size:17px;
-  }
-  
-  .Project3 p{
-    font-size:17px;
-  }
-  
-  .Project4 p{
-    font-size:17px;
-  }
-  
-  p{
-    font-size:17px;
-  }
-  
-  /* Footer Styling */
-  
-  footer{
-    text-align:center;
-  }
+
+h1{
+  display:flex;
+  text-align:center;
+  color:Green;
+  height:100px;
+  width:300px;
+}
+
+.Home p:hover{
+  color:gold;
+}
+
+.About p:hover{
+  color:gold;
+}
+
+.Contact p:hover{
+  color:gold;
+}
+
+.Project p:hover{
+  color:gold;
+}
+
+/* Body Text Styles*/
+h2{
+  text-align:center;
+  color:crimson;
+}
+/* My Project Stlyes*/
+
+.Gallery img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height:250px;
+  width:250px;
+}
+
+.Gallery{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.Gallery:hover{
+  background-color:gold;
+}
+
+h3{
+  text-align:center;
+}
+h3:hover{
+  color:crimson;
+}
+
+/* Paragraph stytling */
+p{
+  font-size:17px;
+}
+
+/* Footer Styling */
+
+footer{
+  text-align:center;
+}
