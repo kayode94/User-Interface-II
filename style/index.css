@@ -189,13 +189,38 @@ footer p{
 
 footer h2{
   font-size: 3.5rem;
-  margin-right:20px;
+  padding-right:90px;
 }
 
 footer p:hover{
   color:red;
 }
 
+footer p{
+  margin-left: 100px;
+}
+
 footer h3{
-  margin-left: 20px;
+  padding-left: 100px;
+}
+
+.fa-twitter-square{
+  color:red;
+  font-size: 5rem;
+}
+
+.fa-facebook-square{
+  color:red;
+  font-size: 5rem;
+}
+
+.fa-instagram{
+  color:red;
+  font-size: 5rem;
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-evenly;
+  /* border:2px solid white; */
 }
