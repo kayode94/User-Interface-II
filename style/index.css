@@ -189,19 +189,12 @@ footer p{
 
 footer h2{
   font-size: 3.5rem;
-  padding-right:90px;
+  /* padding-right:90px; */
+
 }
 
 footer p:hover{
   color:red;
-}
-
-footer p{
-  margin-left: 100px;
-}
-
-footer h3{
-  padding-left: 100px;
 }
 
 .fa-twitter-square{
@@ -223,4 +216,47 @@ footer h3{
   display: flex;
   justify-content: space-evenly;
   /* border:2px solid white; */
+}
+
+
+/* Media Queries */
+
+@media(max-width:800px){
+  header h1{
+    margin-left:15%;
+  }
+  header nav{
+    width:90%;
+  }
+  .nav-class{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:90%;
+    height:50%;
+  }
+  #about-me p{
+    text-align: center;
+    font-size: 2rem;
+    width:100%;
+  }
+  .Gallery{
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+  }
+  footer div{
+
+    width:100%;
+    text-align: center;
+  }
+  footer div p{
+    margin-left:40%;
+  }
 }
