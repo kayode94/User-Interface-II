@@ -1,1 +1,262 @@
 /* Add CSS styling here */
+/*reset goes first*/
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+/* font-size: 100%;   */
+font: inherit;  
+vertical-align: baseline;  
+}
+
+  html{
+  font-size:62.5%;
+  box-sizing:border-box;
+  margin:0;
+  max-width:100%;
+}
+
+*{
+  padding:10px;
+  margin:0;
+  max-width:100%; 
+}
+
+
+
+/* Page background color*/
+
+body{
+  border:2px solid grey;
+  font-size: 2rem;
+  background-image: url(https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* General Styles*/
+p{
+  color:yellow;
+  font-size: 2.5rem;
+}
+
+
+/* Header Styles*/
+h1{
+  color:white;
+  font-size: 4rem;
+  margin:2%;
+  margin-left: 4%;
+}
+
+h2{
+  color:yellow;
+}
+
+h3{
+  color:yellow;
+  font-size: 2.5rem;
+}
+
+a{
+  color:red;
+  text-decoration: none;
+}
+
+
+header nav{
+  margin-bottom:2%;
+  margin-left: .5%;
+  width:25%;
+}
+
+header nav a{
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 10px;
+  background-color:yellow;
+  text-align: center;
+}
+header nav a:hover{
+  color:black;
+}
+
+.nav-class{
+  display:flex;
+  justify-content: space-around;
+  margin-left: 10%;
+}
+
+
+
+/* About Me Styles*/
+
+
+#about-me{
+  /* border:2px solid grey; */
+  display:flex;
+  justify-content: space-between;
+  width:80%;
+  margin-left: 2%;
+}
+
+#about-me span{
+  color:White;
+  font-size: 3.5rem;
+}
+#about-me p{
+  margin-top:2%;
+  width:50%;
+  margin-right:100px;
+}
+
+#about-me a:hover{
+  color:black;
+}
+
+#about-me a{
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 10px;
+  background-color:yellow;
+  text-align: center;
+}
+
+.top-image{
+  margin-left: 40px;
+  margin-top: 5%;
+}
+
+/* My Projects Styles*/
+
+.Gallery{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border:2px solid grey; */
+  width:80%;
+  margin: 2%;
+  text-align: center;
+}
+.Gallery img{
+  /* border:5px solid red; */
+  height:305px;
+  width:305px;
+  margin-bottom:3%;
+}
+
+.Gallery img:hover{
+  border:5px dotted yellow;
+}
+
+/* Footer Styles*/
+
+
+footer{
+  display:flex;
+  justify-content: center;
+  margin:1%;
+}
+
+footer p{
+  margin:20px;
+  color:black;
+  text-decoration:none;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 10px;
+  background-color:yellow;
+  text-align: center;
+}
+
+footer h2{
+  font-size: 3.5rem;
+  /* padding-right:90px; */
+
+}
+
+footer p:hover{
+  color:red;
+}
+
+.fa-twitter-square{
+  color:red;
+  font-size: 5rem;
+}
+
+.fa-facebook-square{
+  color:red;
+  font-size: 5rem;
+}
+
+.fa-instagram{
+  color:red;
+  font-size: 5rem;
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-evenly;
+  /* border:2px solid white; */
+}
+
+
+/* Media Queries */
+
+@media(max-width:800px){
+  header h1{
+    margin-left:15%;
+  }
+  header nav{
+    width:90%;
+  }
+  .nav-class{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:90%;
+    height:50%;
+  }
+  #about-me p{
+    text-align: center;
+    font-size: 2rem;
+    width:100%;
+  }
+  .Gallery{
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+  }
+  footer div{
+
+    width:100%;
+    text-align: center;
+  }
+  footer div p{
+    margin-left:40%;
+  }
+}
